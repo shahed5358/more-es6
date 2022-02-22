@@ -12,11 +12,12 @@ console.log(phone, id);
 const company = {
     name: 'gp',
     ceo: { id: 1, name: 'ajmol', food: 'fucka' },
-    web: { work: 'website develop', employ: 22, frameWork: 'react' }
+    web: { work: 'website develop', employ: 22, frameWork: 'react', tech: { first: 'html', second: 'css', third: 'js' } }
 }
 // const work = company.web.work;
 // const frameWork = company.web.frameWork;
 const { work, frameWork, employ } = company.web;
 const { food, name } = company.ceo;
-console.log(frameWork, food, work, employ, name);
+const { first, second } = company.web.tech;
+console.log(frameWork, food, work, employ, name, first, second);
 
